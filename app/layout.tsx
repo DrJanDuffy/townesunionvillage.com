@@ -11,17 +11,32 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'The Townes at Union Village - New Homes in Henderson, NV',
+    template: '%s | The Townes at Union Village',
   },
-  description: 'This is my portfolio.',
+  description: 'New townhomes for sale in Henderson, NV starting from $369,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent. Century Communities.',
+  keywords: 'new homes Henderson NV, townhomes Henderson, Century Communities, Union Village, Dr. Jan Duffy, real estate agent',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'The Townes at Union Village - New Homes in Henderson, NV',
+    description: 'New townhomes for sale in Henderson, NV starting from $369,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'The Townes at Union Village',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Townes at Union Village - New Homes in Henderson, NV',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Townes at Union Village - New Homes in Henderson, NV',
+    description: 'New townhomes for sale in Henderson, NV starting from $369,990.',
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -36,7 +51,7 @@ export const metadata: Metadata = {
   },
 }
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
+const cx = (...classes: any[]) => classes.filter(Boolean).join(' ')
 
 export default function RootLayout({
   children,
@@ -52,14 +67,12 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
+      <body className="antialiased">
+        <Navbar />
+        {children}
+        <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

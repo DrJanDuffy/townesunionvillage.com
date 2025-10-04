@@ -1,21 +1,244 @@
-import { BlogPosts } from 'app/components/posts'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
-    </section>
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="relative bg-cover bg-center h-[500px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/hero-union-village.jpg')" }}>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 text-center">
+          <h1 className="text-5xl font-extrabold leading-tight mb-4">
+            The Townes at Union Village - New Homes in Henderson, NV
+          </h1>
+          <p className="text-xl mb-8">
+            Now Selling! Starting at $369,990 - Two-Story Homes up to 1,965 sq ft
+          </p>
+          <p className="text-lg font-semibold mb-8">
+            Expert Guidance from Dr. Jan Duffy, your Preferred Buyer Agent
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a
+              href="tel:7025001955"
+              className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium"
+            >
+              Call NOW: (702) 500-1955
+            </a>
+            <Link
+              href="/floor-plans"
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors text-lg font-medium"
+            >
+              View Floor Plans
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Limited Availability */}
+      <section className="bg-red-700 text-white text-center py-6">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-2">🚨 LIMITED AVAILABILITY - ACT FAST!</h2>
+          <p className="text-xl mb-4">
+            Only 3 floor plans remaining! The Townes at Union Village is selling out fast. Get your VIP tour with Dr. Jan Duffy before these homes are gone.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a
+              href="tel:7025001955"
+              className="bg-white text-red-700 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors text-lg font-medium"
+            >
+              SECURE YOUR HOME: (702) 500-1955
+            </a>
+            <Link
+              href="/floor-plans"
+              className="bg-red-800 text-white px-8 py-3 rounded-lg hover:bg-red-900 transition-colors text-lg font-medium"
+            >
+              VIEW AVAILABLE FLOOR PLANS
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Floor Plans Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-10">The Townes at Union Village Floor Plans - Now Selling!</h2>
+          <p className="text-lg text-gray-600 mb-12">
+            Limited Availability! Choose from 3 two-story floor plans with 3 bedrooms and up to 1,965 sq. ft. Each home features expansive living spaces, premium finishes, and smart tech included with the Century Connect® package. Starting from $369,990.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Residence 1602 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-48 bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">Residence 1602 Image</span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">Residence 1602</h3>
+                <p className="text-blue-600 text-xl font-bold mb-4">From $369,990</p>
+                <ul className="text-gray-700 text-left space-y-2">
+                  <li className="flex items-center"><span className="font-medium w-24">Square Feet:</span> 1,602</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Bedrooms:</span> 3</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Bathrooms:</span> 2.5</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Car Garage:</span> 2</li>
+                </ul>
+                <Link
+                  href="/floor-plans#residence-1602"
+                  className="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                >
+                  View Details
+                </Link>
+              </div>
+            </div>
+
+            {/* Residence 1708 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-48 bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">Residence 1708 Image</span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">Residence 1708</h3>
+                <p className="text-blue-600 text-xl font-bold mb-4">From $379,990</p>
+                <ul className="text-gray-700 text-left space-y-2">
+                  <li className="flex items-center"><span className="font-medium w-24">Square Feet:</span> 1,708</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Bedrooms:</span> 3</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Bathrooms:</span> 2.5</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Car Garage:</span> 2</li>
+                </ul>
+                <Link
+                  href="/floor-plans#residence-1708"
+                  className="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                >
+                  View Details
+                </Link>
+              </div>
+            </div>
+
+            {/* Residence 1965 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="h-48 bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">Residence 1965 Image</span>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">Residence 1965</h3>
+                <p className="text-blue-600 text-xl font-bold mb-4">From $399,990</p>
+                <ul className="text-gray-700 text-left space-y-2">
+                  <li className="flex items-center"><span className="font-medium w-24">Square Feet:</span> 1,965</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Bedrooms:</span> 3</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Bathrooms:</span> 2.5</li>
+                  <li className="flex items-center"><span className="font-medium w-24">Car Garage:</span> 2</li>
+                </ul>
+                <Link
+                  href="/floor-plans#residence-1965"
+                  className="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                >
+                  View Details
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-10">The Townes at Union Village Community Gallery</h2>
+          <p className="text-lg text-gray-600 mb-12">
+            Explore the stunning homes and beautiful community at The Townes at Union Village. From modern exteriors to luxurious interiors, discover why Union Village is the perfect place to call home in Henderson.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+              <span className="text-gray-500">Luxury home exterior</span>
+            </div>
+            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+              <span className="text-gray-500">Modern luxury kitchen</span>
+            </div>
+            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+              <span className="text-gray-500">Spacious luxury living room</span>
+            </div>
+            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+              <span className="text-gray-500">Elegant master bedroom</span>
+            </div>
+            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+              <span className="text-gray-500">Luxury bathroom</span>
+            </div>
+            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+              <span className="text-gray-500">Resort-style community pool</span>
+            </div>
+          </div>
+          <Link
+            href="/community"
+            className="mt-12 inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium"
+          >
+            Explore Community
+          </Link>
+        </div>
+      </section>
+
+      {/* Why Work With Dr. Jan Duffy */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-10">Why Work With Dr. Jan Duffy?</h2>
+          <p className="text-lg text-gray-600 mb-12">
+            Get expert, unbiased guidance—I'm your trusted advisor, not the builder's sales agent.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Century Communities Partnership</h3>
+              <p className="text-gray-700">
+                I work directly with Century Communities to give you insider access while representing YOUR interests, not theirs.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Market Expertise</h3>
+              <p className="text-gray-700">
+                I'll show you comparable communities and help you understand true market value—not just what the builder tells you.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Negotiation Power</h3>
+              <p className="text-gray-700">
+                Even with new construction, there's room to negotiate. I know how to maximize your leverage and protect your interests.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Las Vegas Specialist</h3>
+              <p className="text-gray-700">
+                Nevada License S.0197614. Deep knowledge of Union Village and the entire metro area.
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/about-dr-jan"
+            className="mt-12 inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium"
+          >
+            Meet Dr. Jan Duffy
+          </Link>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-blue-700 text-white text-center py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4">🚨 DON'T MISS OUT - THE TOWNES AT UNION VILLAGE IS SELLING FAST!</h2>
+          <p className="text-xl mb-8">
+            Only 3 floor plans remaining! Get VIP access to The Townes at Union Village with Dr. Jan Duffy's expert guidance. Schedule your private tour today before these homes are gone forever.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a
+              href="tel:7025001955"
+              className="bg-white text-blue-700 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors text-lg font-medium"
+            >
+              SECURE YOUR HOME NOW (702) 500-1955
+            </a>
+            <Link
+              href="/contact"
+              className="bg-blue-800 text-white px-8 py-3 rounded-lg hover:bg-blue-900 transition-colors text-lg font-medium"
+            >
+              EMAIL DR. JAN
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
