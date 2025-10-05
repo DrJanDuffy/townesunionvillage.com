@@ -1,4 +1,5 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
+import RealScoutOfficeListings from '../components/realscout-office-listings'
 
 export default function AboutDrJan() {
   return (
@@ -402,6 +403,30 @@ export default function AboutDrJan() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Neighborhood Properties */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="mb-4">
+              <div className="inline-flex items-center bg-blue-600/10 px-4 py-2 rounded-full text-sm font-semibold text-blue-800 border border-blue-200">
+                NEIGHBORHOOD PROPERTIES
+              </div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
+              <span className="font-extralight">Explore Henderson with Dr. Jan</span>
+            </h2>
+            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
+              Let Dr. Jan Duffy guide you to your perfect home anywhere in Henderson. 
+              Discover other exceptional properties in the area with expert guidance from your exclusive buyer representative.
+            </p>
+          </div>
+          <RealScoutOfficeListings 
+            title="Henderson Properties with Dr. Jan Duffy"
+            subtitle="Expert guidance from Dr. Jan Duffy • Properties $500K-$600K • Single Family & Other Homes"
+          />
         </div>
       </section>
 
