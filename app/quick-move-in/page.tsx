@@ -4,50 +4,66 @@ export default function QuickMoveIn() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Quick Move-In Homes
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
+            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
+            IMMEDIATE OCCUPANCY
+          </div>
+          <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-wide">
+            <span className="font-extralight text-white">Quick Move-In Homes</span>
+            <br />
+            <span className="text-2xl md:text-3xl font-light text-blue-200 tracking-wider">
+              THE TOWNES AT UNION VILLAGE
+            </span>
           </h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Move in fast! Several homes are available for immediate or near-future occupancy at The Townes at Union Village
+          <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
+            Experience immediate luxury living! Several exceptional homes are available for immediate or near-future occupancy 
+            at The Townes at Union Village, featuring premium finishes and Century Home Connect® smart technology.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📞 Call (702) 500-1955
+              SECURE YOUR HOME NOW
             </a>
             <a 
               href="mailto:DrJanSells@UnionVillage.com"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📧 Contact Dr. Jan
+              CONTACT DR. JAN
             </a>
           </div>
         </div>
       </section>
 
       {/* Available Homes Alert */}
-      <section className="bg-green-600 text-white py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">🏠 QUICK MOVE-IN HOMES AVAILABLE</h3>
-          <p className="text-lg mb-4">
-            Limited inventory! Several homes are ready for immediate or near-future move-in. Contact Dr. Jan Duffy today to secure your home.
+      <section className="bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white py-12 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-amber-800/90 to-amber-900/90"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-white/20">
+            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
+            LIMITED INVENTORY
+          </div>
+          <h3 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">QUICK MOVE-IN HOMES AVAILABLE</h3>
+          <p className="text-xl mb-8 font-light max-w-3xl mx-auto leading-relaxed">
+            Exceptional opportunity! Several premium homes are ready for immediate or near-future occupancy. 
+            Contact Dr. Jan Duffy today to secure your luxury residence.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-white text-green-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
+              className="bg-white text-amber-900 px-10 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📞 SECURE YOUR HOME: (702) 500-1955
+              SECURE YOUR HOME NOW
             </a>
             <a 
               href="#available-homes"
-              className="bg-green-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-800 transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-4 rounded-lg font-semibold transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              👀 VIEW AVAILABLE HOMES
+              VIEW AVAILABLE HOMES
             </a>
           </div>
         </div>

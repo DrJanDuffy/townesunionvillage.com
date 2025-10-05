@@ -5,43 +5,62 @@ export default function Community() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Community
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
+            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
+            PREMIER COMMUNITY
+          </div>
+          <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-wide">
+            <span className="font-extralight text-white">Community</span>
+            <br />
+            <span className="text-2xl md:text-3xl font-light text-blue-200 tracking-wider">
+              THE TOWNES AT UNION VILLAGE
+            </span>
           </h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Discover The Townes at Union Village - A premier community in Henderson, NV
+          <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
+            Discover The Townes at Union Village - A sophisticated new construction community in Henderson, Nevada, 
+            featuring premium amenities and exceptional attention to detail.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📞 Call (702) 500-1955
+              SCHEDULE COMMUNITY TOUR
             </a>
             <a 
               href="mailto:DrJanSells@UnionVillage.com"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📧 Contact Dr. Jan
+              CONTACT DR. JAN
             </a>
           </div>
         </div>
       </section>
 
       {/* Community Overview */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Welcome to The Townes at Union Village
+          <div className="text-center mb-16">
+            <div className="mb-4">
+              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
+                EXCEPTIONAL LIVING
+              </div>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
+              <span className="font-extralight">Welcome to</span>
+              <br />
+              <span className="text-2xl md:text-3xl font-light text-gray-600 tracking-wider">
+                THE TOWNES AT UNION VILLAGE
+              </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Century Communities is excited to offer new homes for sale in Henderson, NV at The Townes at Union Village. 
-              This exceptional community showcases a range of versatile townhome floor plans, boasting open-concept layouts 
-              with modern features like our Century Home Connect® smart home package. Conveniently located near Henderson Hospital, 
-              The Townes at Union Village provides easy access to shopping, dining and entertainment via Highway 95 and I-215.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
+              Century Communities presents an exceptional collection of new homes in Henderson, Nevada at The Townes at Union Village. 
+              This sophisticated community showcases meticulously crafted townhome floor plans featuring open-concept layouts, 
+              premium finishes, and Century Home Connect® smart home technology. Strategically positioned near Henderson Hospital, 
+              The Townes at Union Village offers unparalleled convenience to shopping, dining, and entertainment via Highway 95 and I-215.
             </p>
           </div>
 
@@ -66,37 +85,53 @@ export default function Community() {
       </section>
 
       {/* Community Amenities */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Community Amenities
+          <div className="text-center mb-16">
+            <div className="mb-4">
+              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
+                PREMIUM AMENITIES
+              </div>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
+              <span className="font-extralight">Community Amenities</span>
+              <br />
+              <span className="text-2xl md:text-3xl font-light text-gray-600 tracking-wider">
+                EXCEPTIONAL LIVING
+              </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Enjoy a variety of outdoor amenities and recreational opportunities right in your neighborhood.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
+              Experience a curated collection of outdoor amenities and recreational opportunities designed to enhance 
+              your lifestyle and create lasting memories within your neighborhood.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg p-8 text-center shadow-md">
-              <div className="text-6xl mb-4">🐕</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Dog Park</h3>
-              <p className="text-gray-600">
-                Let your furry friends play and socialize in our dedicated dog park area.
+          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <div className="bg-white rounded-xl p-10 text-center shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-white text-3xl">🐕</span>
+              </div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4 tracking-wide">Dog Park</h3>
+              <p className="text-gray-600 font-light leading-relaxed">
+                Let your furry companions play and socialize in our thoughtfully designed dog park area.
               </p>
             </div>
-            <div className="bg-white rounded-lg p-8 text-center shadow-md">
-              <div className="text-6xl mb-4">🚶‍♀️</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Walking Trail</h3>
-              <p className="text-gray-600">
-                Stay active with scenic walking trails throughout the community.
+            <div className="bg-white rounded-xl p-10 text-center shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-white text-3xl">🚶‍♀️</span>
+              </div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4 tracking-wide">Walking Trail</h3>
+              <p className="text-gray-600 font-light leading-relaxed">
+                Stay active with beautifully landscaped walking trails throughout the community.
               </p>
             </div>
-            <div className="bg-white rounded-lg p-8 text-center shadow-md">
-              <div className="text-6xl mb-4">🍽️</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Picnic Areas</h3>
-              <p className="text-gray-600">
-                Perfect spots for outdoor dining and community gatherings.
+            <div className="bg-white rounded-xl p-10 text-center shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-white text-3xl">🍽️</span>
+              </div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4 tracking-wide">Picnic Areas</h3>
+              <p className="text-gray-600 font-light leading-relaxed">
+                Elegant outdoor spaces perfect for dining and community gatherings.
               </p>
             </div>
           </div>
@@ -239,27 +274,36 @@ export default function Community() {
       </section>
 
       {/* Quick Move-In Homes */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Quick Move-In Homes Available
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-gray-900/95 to-slate-800/95"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
+            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
+            LIMITED AVAILABILITY
+          </div>
+          <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
+            <span className="font-extralight">Quick Move-In Homes</span>
+            <br />
+            <span className="text-2xl md:text-3xl font-light text-amber-200 tracking-wider">
+              AVAILABLE NOW
+            </span>
           </h2>
-          <p className="text-xl mb-8 max-w-4xl mx-auto">
-            Several quick move-in homes are available starting from $369,990 with estimated 
-            completion dates throughout 2024. Don't wait - these homes are selling fast!
+          <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
+            Several exceptional quick move-in homes are available starting from $374,990 with immediate occupancy. 
+            These exceptional residences represent the pinnacle of luxury new construction - don't miss this opportunity.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="/quick-move-in"
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              🏠 View Quick Move-In Homes
+              VIEW QUICK MOVE-IN HOMES
             </a>
             <a 
               href="tel:7025001955"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📞 Call Dr. Jan: (702) 500-1955
+              SCHEDULE PRIVATE TOUR
             </a>
           </div>
         </div>

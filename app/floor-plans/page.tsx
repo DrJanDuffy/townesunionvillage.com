@@ -4,110 +4,157 @@ export default function FloorPlans() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Floor Plans
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
+            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
+            EXCLUSIVE FLOOR PLANS
+          </div>
+          <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-wide">
+            <span className="font-extralight text-white">Floor Plans</span>
+            <br />
+            <span className="text-2xl md:text-3xl font-light text-blue-200 tracking-wider">
+              THE TOWNES AT UNION VILLAGE
+            </span>
           </h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Choose from 3 stunning two-story townhome floor plans at The Townes at Union Village
+          <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
+            Discover three meticulously crafted floor plans featuring premium finishes, Century Home Connect® smart technology, 
+            and exceptional attention to detail. Each residence represents the pinnacle of modern luxury living.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📞 Call (702) 500-1955
+              SCHEDULE PRIVATE TOUR
             </a>
             <a 
               href="mailto:DrJanSells@UnionVillage.com"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📧 Contact Dr. Jan
+              CONTACT DR. JAN
             </a>
           </div>
         </div>
       </section>
 
       {/* Floor Plans Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              The Townes at Union Village Floor Plans
+          <div className="text-center mb-16">
+            <div className="mb-4">
+              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
+                EXCEPTIONAL LIVING
+              </div>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
+              <span className="font-extralight">Exclusive Floor Plans</span>
+              <br />
+              <span className="text-2xl md:text-3xl font-light text-gray-600 tracking-wider">
+                THE TOWNES AT UNION VILLAGE
+              </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Each home features expansive living spaces, premium finishes, and smart tech included with the Century Connect® package.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
+              Each residence features expansive living spaces, premium finishes, and Century Home Connect® smart technology, 
+              representing the pinnacle of sophisticated new construction living.
             </p>
           </div>
 
           <div className="space-y-16">
             {/* Residence 1405 */}
-            <div id="residence-1405" className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="grid lg:grid-cols-2 gap-8">
-                <div className="p-8">
-                  <h3 className="text-3xl font-bold text-gray-900 mb-4">Residence 1405</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-6">From $374,990</div>
+            <div id="residence-1405" className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-all duration-300">
+              <div className="grid lg:grid-cols-2 gap-0">
+                <div className="p-12">
+                  <div className="mb-6">
+                    <div className="inline-flex items-center bg-amber-600/10 px-3 py-1 rounded-full text-xs font-semibold text-amber-800 border border-amber-200 mb-4">
+                      EXCLUSIVE FLOOR PLAN
+                    </div>
+                    <h3 className="text-4xl font-light text-gray-900 mb-2 tracking-wide">Residence 1405</h3>
+                    <div className="text-4xl font-light text-amber-600 mb-6">From $374,990</div>
+                  </div>
                   
-                  <div className="grid grid-cols-2 gap-6 mb-8">
-                    <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <div className="text-3xl font-bold text-gray-900">1,405</div>
-                      <div className="text-gray-600">Square Feet</div>
+                  <div className="grid grid-cols-2 gap-6 mb-10">
+                    <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200">
+                      <div className="text-3xl font-light text-gray-900 mb-1">1,405</div>
+                      <div className="text-gray-600 text-sm font-light tracking-wide">Square Feet</div>
                     </div>
-                    <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <div className="text-3xl font-bold text-gray-900">2</div>
-                      <div className="text-gray-600">Bedrooms</div>
+                    <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200">
+                      <div className="text-3xl font-light text-gray-900 mb-1">2</div>
+                      <div className="text-gray-600 text-sm font-light tracking-wide">Bedrooms</div>
                     </div>
-                    <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <div className="text-3xl font-bold text-gray-900">2.5</div>
-                      <div className="text-gray-600">Bathrooms</div>
+                    <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200">
+                      <div className="text-3xl font-light text-gray-900 mb-1">2.5</div>
+                      <div className="text-gray-600 text-sm font-light tracking-wide">Bathrooms</div>
                     </div>
-                    <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <div className="text-3xl font-bold text-gray-900">2</div>
-                      <div className="text-gray-600">Car Garage</div>
+                    <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200">
+                      <div className="text-3xl font-light text-gray-900 mb-1">2</div>
+                      <div className="text-gray-600 text-sm font-light tracking-wide">Car Garage</div>
                     </div>
                   </div>
 
-                  <div className="mb-8">
-                    <h4 className="text-xl font-semibold text-gray-900 mb-4">Features:</h4>
-                    <ul className="space-y-2 text-gray-600">
-                      <li>• Nook option available</li>
-                      <li>• Open floor plan with modern design</li>
-                      <li>• 2 bedrooms with spacious layout</li>
-                      <li>• 2.5 bathrooms with premium finishes</li>
-                      <li>• 2-car garage with storage</li>
-                      <li>• Century Home Connect® smart home package</li>
-                      <li>• Energy-efficient features</li>
+                  <div className="mb-10">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-6 tracking-wide">Premium Features</h4>
+                    <ul className="space-y-3 text-gray-600">
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="font-light">Nook option available for flexible living</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="font-light">Open floor plan with sophisticated design</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="font-light">2 bedrooms with spacious, well-appointed layout</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="font-light">2.5 bathrooms with premium finishes</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="font-light">2-car garage with additional storage</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="font-light">Century Home Connect® smart home technology</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span className="font-light">Energy-efficient features throughout</span>
+                      </li>
                     </ul>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a 
                       href="tel:7025001955"
-                      className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
+                      className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center tracking-wide"
                     >
-                      Call Dr. Jan: (702) 500-1955
+                      SCHEDULE PRIVATE TOUR
                     </a>
                     <a 
                       href="mailto:DrJanSells@UnionVillage.com"
-                      className="bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors text-center"
+                      className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-gray-900 border-2 border-gray-300 hover:border-gray-400 px-8 py-4 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center tracking-wide"
                     >
-                      Email for Details
+                      REQUEST DETAILS
                     </a>
                   </div>
                 </div>
-                <div className="bg-gray-200 flex items-center justify-center min-h-[400px]">
-                  <div className="text-center text-gray-500">
-                    <div className="text-6xl mb-4">🏠</div>
-                    <p>Floor Plan Image</p>
-                    <p className="text-sm">Residence 1405</p>
+                <div className="bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center min-h-[500px] relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10"></div>
+                  <div className="text-center text-gray-600 relative z-10">
+                    <div className="text-8xl mb-6">🏠</div>
+                    <p className="text-xl font-light tracking-wide">Floor Plan Image</p>
+                    <p className="text-sm font-light text-gray-500">Residence 1405</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Residence 1478 */}
-            <div id="residence-1478" className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div id="residence-1478" className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-all duration-300">
               <div className="grid lg:grid-cols-2 gap-8">
                 <div className="bg-gray-200 flex items-center justify-center min-h-[400px] lg:order-2">
                   <div className="text-center text-gray-500">
@@ -172,7 +219,7 @@ export default function FloorPlans() {
             </div>
 
             {/* Residence 1479 */}
-            <div id="residence-1479" className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div id="residence-1479" className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-all duration-300">
               <div className="grid lg:grid-cols-2 gap-8">
                 <div className="p-8">
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">Residence 1479</h3>
@@ -238,14 +285,24 @@ export default function FloorPlans() {
       </section>
 
       {/* Location Map Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Floor Plans at The Townes at Union Village
+          <div className="text-center mb-16">
+            <div className="mb-4">
+              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
+                MODEL HOMES
+              </div>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
+              <span className="font-extralight">Visit Our Model Homes</span>
+              <br />
+              <span className="text-2xl md:text-3xl font-light text-gray-600 tracking-wider">
+                THE TOWNES AT UNION VILLAGE
+              </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Located at 1001 Gearus Place, Henderson, NV 89011. Visit our model homes and see these beautiful floor plans in person.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
+              Located at 1001 Gearus Place, Henderson, NV 89011. Experience these exceptional floor plans firsthand 
+              in our fully furnished model homes, designed to showcase the pinnacle of luxury living.
             </p>
           </div>
 
@@ -294,32 +351,42 @@ export default function FloorPlans() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Ready to Find Your Dream Home?
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-gray-900/95 to-slate-800/95"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
+            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
+            EXCLUSIVE OPPORTUNITY
+          </div>
+          <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
+            <span className="font-extralight">Ready to Find Your</span>
+            <br />
+            <span className="text-2xl md:text-3xl font-light text-amber-200 tracking-wider">
+              DREAM HOME?
+            </span>
           </h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Contact Dr. Jan Duffy today for expert guidance and VIP access to The Townes at Union Village.
+          <p className="text-xl mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+            Contact Dr. Jan Duffy today for expert guidance and exclusive access to The Townes at Union Village. 
+            Experience the difference of having a dedicated buyer representative who advocates solely for your interests.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📞 Call (702) 500-1955
+              SCHEDULE PRIVATE TOUR
             </a>
             <a 
               href="mailto:DrJanSells@UnionVillage.com"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              📧 Email Dr. Jan
+              CONTACT DR. JAN
             </a>
             <a 
               href="/community"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
-              🏘️ Explore Community
+              EXPLORE COMMUNITY
             </a>
           </div>
         </div>
