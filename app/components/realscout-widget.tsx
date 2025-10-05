@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 declare global {
   namespace JSX {
@@ -23,8 +23,10 @@ export default function RealScoutWidget({
   title = "Find Your Dream Home",
   subtitle = "Search all available properties in Henderson, NV and surrounding areas"
 }: RealScoutWidgetProps) {
+  const [isLoading, setIsLoading] = useState(true)
+  const [hasError, setHasError] = useState(false)
   useEffect(() => {
-    // Add custom styles if not already added (script is injected by Cloudflare Worker)
+    // Add custom styles
     if (!document.querySelector('style[data-realscout-custom]')) {
       const style = document.createElement('style')
       style.setAttribute('data-realscout-custom', 'true')
@@ -34,9 +36,80 @@ export default function RealScoutWidget({
           --rs-as-background-color: #ffffff;
           --rs-as-button-color: rgb(35, 93, 137);
           --rs-as-widget-width: 500px !important;
+          display: block !important;
+          min-height: 400px !important;
         }
       `
       document.head.appendChild(style)
+    }
+
+    // Load RealScout script with multiple fallback strategies
+    const loadRealScoutScript = () => {
+      // Check if already loaded
+      if (document.querySelector('script[src*="realscout-web-components"]')) {
+        return
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js'
+      script.type = 'module'
+      script.async = true
+      
+      script.onload = () => {
+        console.log('RealScout script loaded successfully')
+        setIsLoading(false)
+        // Wait a bit for custom element to register
+        setTimeout(() => {
+          const customElement = customElements.get('realscout-advanced-search')
+          if (customElement) {
+            console.log('RealScout custom element registered')
+          } else {
+            console.log('RealScout custom element not found')
+            setHasError(true)
+          }
+        }, 2000)
+      }
+      
+      script.onerror = () => {
+        console.error('Failed to load RealScout script')
+        setHasError(true)
+        setIsLoading(false)
+        // Try alternative loading method
+        const fallbackScript = document.createElement('script')
+        fallbackScript.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js'
+        fallbackScript.async = true
+        fallbackScript.onload = () => {
+          console.log('Fallback RealScout script loaded')
+          setIsLoading(false)
+        }
+        fallbackScript.onerror = () => {
+          console.error('Fallback script also failed')
+          setHasError(true)
+        }
+        document.head.appendChild(fallbackScript)
+      }
+      
+      document.head.appendChild(script)
+    }
+
+    // Try to load immediately
+    loadRealScoutScript()
+
+    // Also try after a delay in case Cloudflare Worker is slow
+    const timeoutId = setTimeout(loadRealScoutScript, 2000)
+
+    // Set a maximum timeout for the entire loading process
+    const maxTimeoutId = setTimeout(() => {
+      if (isLoading) {
+        console.warn('RealScout widget loading timeout - showing error state')
+        setHasError(true)
+        setIsLoading(false)
+      }
+    }, 10000) // 10 second timeout
+
+    return () => {
+      clearTimeout(timeoutId)
+      clearTimeout(maxTimeoutId)
     }
   }, [])
 
@@ -52,7 +125,46 @@ export default function RealScoutWidget({
       
       {/* Widget Container */}
       <div className="p-8">
-        <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+        {isLoading && (
+          <div className="flex items-center justify-center h-96">
+            <div className="text-center">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-amber-600 mx-auto mb-4"></div>
+              <p className="text-gray-600 font-light">Loading property search...</p>
+            </div>
+          </div>
+        )}
+        
+        {hasError && (
+          <div className="flex items-center justify-center h-96">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-red-600 text-2xl">⚠️</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Search Temporarily Unavailable</h3>
+              <p className="text-gray-600 font-light mb-6">
+                Please contact Dr. Jan Duffy directly for immediate assistance with your property search.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="tel:7025001955"
+                  className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Call (702) 500-1955
+                </a>
+                <a
+                  href="mailto:DrJanSells@UnionVillage.com"
+                  className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Email Dr. Jan
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+        
+        {!isLoading && !hasError && (
+          <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-advanced-search>
+        )}
       </div>
       
       {/* Footer Note */}
