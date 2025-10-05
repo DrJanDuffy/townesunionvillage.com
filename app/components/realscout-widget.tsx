@@ -1,7 +1,3 @@
-'use client'
-
-import { useEffect } from 'react'
-
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -23,16 +19,6 @@ export default function RealScoutWidget({
   title = "Find Your Dream Home",
   subtitle = "Search all available properties in Henderson, NV and surrounding areas"
 }: RealScoutWidgetProps) {
-  useEffect(() => {
-    // Load RealScout script if not already loaded
-    if (!document.querySelector('script[src*="realscout"]')) {
-      const script = document.createElement('script')
-      script.src = 'https://widgets.realscout.com/widgets.js'
-      script.async = true
-      document.head.appendChild(script)
-    }
-  }, [])
-
   return (
     <div className={`bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden ${className}`}>
       {/* Header */}
