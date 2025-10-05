@@ -24,15 +24,7 @@ export default function RealScoutWidget({
   subtitle = "Search all available properties in Henderson, NV and surrounding areas"
 }: RealScoutWidgetProps) {
   useEffect(() => {
-    // Load RealScout script if not already loaded
-    if (!document.querySelector('script[src*="realscout-web-components"]')) {
-      const script = document.createElement('script')
-      script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js'
-      script.type = 'module'
-      document.head.appendChild(script)
-    }
-
-    // Add custom styles if not already added
+    // Add custom styles if not already added (script is injected by Cloudflare Worker)
     if (!document.querySelector('style[data-realscout-custom]')) {
       const style = document.createElement('style')
       style.setAttribute('data-realscout-custom', 'true')
