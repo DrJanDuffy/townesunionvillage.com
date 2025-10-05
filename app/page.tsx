@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import SEOOptimizedMap from './components/seo-optimized-map'
 
 export default function Page() {
   return (
@@ -12,7 +13,7 @@ export default function Page() {
             The Townes at Union Village - New Homes in Henderson, NV
           </h1>
           <p className="text-xl mb-8">
-            Now Selling! Starting at $369,990 - Two-Story Homes up to 1,965 sq ft
+            Now Selling! Starting from $374,990 - Townhomes up to 1,479 sq ft
           </p>
           <p className="text-lg font-semibold mb-8">
             Expert Guidance from Dr. Jan Duffy, your Preferred Buyer Agent
@@ -213,6 +214,63 @@ export default function Page() {
           >
             Meet Dr. Jan Duffy
           </Link>
+        </div>
+      </section>
+
+      {/* Location & Contact Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Visit The Townes at Union Village in Henderson, NV
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Located in beautiful Henderson, Nevada. Easy access to shopping, dining, and entertainment. 
+              Expert guidance from Dr. Jan Duffy, your preferred buyer agent.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Henderson, NV for Your New Home?</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🏥</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Near Henderson Hospital</h4>
+                    <p className="text-gray-600 text-sm">Minutes from top medical facilities and healthcare services in Henderson, Nevada.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🛍️</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Premium Shopping Centers</h4>
+                    <p className="text-gray-600 text-sm">Close to Galleria at Sunset, Costco, Target, and major retailers in Henderson.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🛣️</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Easy Highway Access</h4>
+                    <p className="text-gray-600 text-sm">Convenient access to Highway 95 and I-215 for easy commuting throughout Las Vegas Valley.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🌵</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Desert Living at 2,000 ft</h4>
+                    <p className="text-gray-600 text-sm">Enjoy beautiful desert views, mountain vistas, and outdoor recreation in Henderson, Nevada.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <SEOOptimizedMap 
+              variant="business-profile"
+              title="The Townes at Union Village - Century Communities Henderson, NV"
+              description="New townhomes starting from $374,990. Expert guidance from Dr. Jan Duffy, preferred buyer agent."
+            />
+          </div>
         </div>
       </section>
 

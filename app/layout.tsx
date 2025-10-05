@@ -7,6 +7,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import LocalBusinessSchema, { NewHomeDevelopmentSchema } from './components/local-business-schema'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -14,11 +15,11 @@ export const metadata: Metadata = {
     default: 'The Townes at Union Village - New Homes in Henderson, NV',
     template: '%s | The Townes at Union Village',
   },
-  description: 'New townhomes for sale in Henderson, NV starting from $369,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent. Century Communities.',
+  description: 'New townhomes for sale in Henderson, NV starting from $374,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent. Century Communities.',
   keywords: 'new homes Henderson NV, townhomes Henderson, Century Communities, Union Village, Dr. Jan Duffy, real estate agent',
   openGraph: {
     title: 'The Townes at Union Village - New Homes in Henderson, NV',
-    description: 'New townhomes for sale in Henderson, NV starting from $369,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent.',
+    description: 'New townhomes for sale in Henderson, NV starting from $374,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent.',
     url: baseUrl,
     siteName: 'The Townes at Union Village',
     locale: 'en_US',
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'The Townes at Union Village - New Homes in Henderson, NV',
-    description: 'New townhomes for sale in Henderson, NV starting from $369,990.',
+    description: 'New townhomes for sale in Henderson, NV starting from $374,990.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -67,6 +68,10 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <head>
+        <LocalBusinessSchema />
+        <NewHomeDevelopmentSchema />
+      </head>
       <body className="antialiased">
         <Navbar />
         {children}

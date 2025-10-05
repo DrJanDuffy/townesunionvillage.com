@@ -1,3 +1,5 @@
+import SEOOptimizedMap from '../components/seo-optimized-map'
+
 export default function FloorPlans() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -45,7 +47,7 @@ export default function FloorPlans() {
               <div className="grid lg:grid-cols-2 gap-8">
                 <div className="p-8">
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">Residence 1405</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-6">From $369,990</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-6">From $374,990</div>
                   
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -53,7 +55,7 @@ export default function FloorPlans() {
                       <div className="text-gray-600">Square Feet</div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
-                      <div className="text-3xl font-bold text-gray-900">3</div>
+                      <div className="text-3xl font-bold text-gray-900">2</div>
                       <div className="text-gray-600">Bedrooms</div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -69,11 +71,12 @@ export default function FloorPlans() {
                   <div className="mb-8">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4">Features:</h4>
                     <ul className="space-y-2 text-gray-600">
+                      <li>• Nook option available</li>
                       <li>• Open floor plan with modern design</li>
-                      <li>• 3 bedrooms with spacious layout</li>
+                      <li>• 2 bedrooms with spacious layout</li>
                       <li>• 2.5 bathrooms with premium finishes</li>
                       <li>• 2-car garage with storage</li>
-                      <li>• Century Connect® smart home package</li>
+                      <li>• Century Home Connect® smart home package</li>
                       <li>• Energy-efficient features</li>
                     </ul>
                   </div>
@@ -139,11 +142,13 @@ export default function FloorPlans() {
                   <div className="mb-8">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4">Features:</h4>
                     <ul className="space-y-2 text-gray-600">
+                      <li>• Optional Dual Primary Suites</li>
+                      <li>• Nook option available</li>
                       <li>• Spacious open-concept living</li>
                       <li>• 3 bedrooms with modern layout</li>
                       <li>• 2.5 bathrooms with luxury finishes</li>
                       <li>• 2-car garage with additional storage</li>
-                      <li>• Century Connect® smart home technology</li>
+                      <li>• Century Home Connect® smart home technology</li>
                       <li>• Premium interior features</li>
                     </ul>
                   </div>
@@ -195,11 +200,11 @@ export default function FloorPlans() {
                   <div className="mb-8">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4">Features:</h4>
                     <ul className="space-y-2 text-gray-600">
-                      <li>• Contemporary open floor plan</li>
+                      <li>• Open floor plan design</li>
                       <li>• 3 bedrooms with flexible layout</li>
                       <li>• 2.5 bathrooms with designer touches</li>
                       <li>• 2-car garage with workspace</li>
-                      <li>• Century Connect® smart home features</li>
+                      <li>• Century Home Connect® smart home features</li>
                       <li>• High-end finishes throughout</li>
                     </ul>
                   </div>
@@ -228,6 +233,62 @@ export default function FloorPlans() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location Map Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Floor Plans at The Townes at Union Village
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Located at 1001 Gearus Place, Henderson, NV 89011. Visit our model homes and see these beautiful floor plans in person.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Visit Our Model Homes</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🏠</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Model Homes Open Daily</h4>
+                    <p className="text-gray-600 text-sm">Tour our fully furnished model homes showcasing all three floor plans at Union Village.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">📐</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Floor Plan Options</h4>
+                    <p className="text-gray-600 text-sm">Choose from Residence 1405 (2 bed), 1478 (3 bed), or 1479 (3 bed) - all with 2.5 baths and 2-car garages.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🎨</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Design Center</h4>
+                    <p className="text-gray-600 text-sm">Customize your new home with premium finishes and Century Home Connect® smart features.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">💰</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Starting from $374,990</h4>
+                    <p className="text-gray-600 text-sm">Competitive pricing with Century Communities quality construction and Dr. Jan Duffy's expert guidance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <SEOOptimizedMap 
+              variant="business-profile"
+              title="Floor Plans at The Townes at Union Village - Henderson, NV"
+              description="Model homes open daily. Residence 1405, 1478, and 1479 floor plans starting from $374,990."
+            />
           </div>
         </div>
       </section>

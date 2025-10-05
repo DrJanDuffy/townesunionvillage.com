@@ -1,3 +1,5 @@
+import SEOOptimizedMap from '../components/seo-optimized-map'
+
 export default function AboutDrJan() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -281,6 +283,63 @@ export default function AboutDrJan() {
               Independent real estate resource. Not affiliated with or endorsed by Century Communities. 
               Dr. Jan Duffy is an independent real estate agent providing expert guidance to home buyers.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Location & Contact Map */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Contact Dr. Jan Duffy at Union Village
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Located at 1001 Gearus Place, Henderson, NV 89011. Schedule your consultation with Dr. Jan Duffy, 
+              your preferred buyer agent for The Townes at Union Village.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Dr. Jan Duffy?</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🎓</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Nevada Licensed Agent</h4>
+                    <p className="text-gray-600 text-sm">Licensed real estate agent in Nevada (License #S.0197614) specializing in new construction homes.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🤝</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Buyer Representation</h4>
+                    <p className="text-gray-600 text-sm">Independent agent representing YOUR interests, not the builder's. Get unbiased expert guidance.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🏗️</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">New Construction Expert</h4>
+                    <p className="text-gray-600 text-sm">Deep knowledge of Century Communities, Union Village, and the Henderson real estate market.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">💼</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Professional Service</h4>
+                    <p className="text-gray-600 text-sm">Available Monday-Sunday, 10 AM - 6 PM for consultations and property tours.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <SEOOptimizedMap 
+              variant="business-profile"
+              title="Dr. Jan Duffy - Real Estate Agent at Union Village Henderson, NV"
+              description="Nevada licensed real estate agent specializing in new construction homes. Contact (702) 500-1955."
+            />
           </div>
         </div>
       </section>

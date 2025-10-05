@@ -1,3 +1,5 @@
+import SEOOptimizedMap from '../components/seo-optimized-map'
+
 export default function QuickMoveIn() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -65,26 +67,26 @@ export default function QuickMoveIn() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Home 1 */}
+            {/* Home 1 - 986 GEARUS PL */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
               <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">Home Image 1</span>
+                <span className="text-gray-500">986 GEARUS PL</span>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-gray-900">Residence 1405</h3>
+                  <h3 className="text-xl font-bold text-gray-900">986 GEARUS PL | Lot UV0064</h3>
                   <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
-                    Available Now
+                    Move-in Ready!
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-blue-600 mb-4">$369,990</div>
+                <div className="text-2xl font-bold text-blue-600 mb-4">$374,990</div>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center">
                     <div className="font-bold text-gray-900">1,405</div>
                     <div className="text-sm text-gray-600">Sq Ft</div>
                   </div>
                   <div className="text-center">
-                    <div className="font-bold text-gray-900">3</div>
+                    <div className="font-bold text-gray-900">2</div>
                     <div className="text-sm text-gray-600">Bedrooms</div>
                   </div>
                   <div className="text-center">
@@ -97,9 +99,9 @@ export default function QuickMoveIn() {
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mb-4">
-                  <strong>Move-in Ready:</strong> Yes<br />
-                  <strong>Estimated Completion:</strong> Immediate<br />
-                  <strong>Status:</strong> Available for viewing
+                  <strong>Residence:</strong> 1405<br />
+                  <strong>Status:</strong> Quick Move-In<br />
+                  <strong>Completion:</strong> Move-in Ready!
                 </div>
                 <a 
                   href="tel:7025001955"
@@ -110,16 +112,16 @@ export default function QuickMoveIn() {
               </div>
             </div>
 
-            {/* Home 2 */}
+            {/* Home 2 - 862 ANGWIN LN */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
               <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">Home Image 2</span>
+                <span className="text-gray-500">862 ANGWIN LN</span>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-gray-900">Residence 1478</h3>
-                  <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">
-                    Ready Soon
+                  <h3 className="text-xl font-bold text-gray-900">862 ANGWIN LN | Lot UV0044</h3>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    Move-in Ready!
                   </span>
                 </div>
                 <div className="text-2xl font-bold text-blue-600 mb-4">$379,990</div>
@@ -142,9 +144,9 @@ export default function QuickMoveIn() {
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mb-4">
-                  <strong>Move-in Ready:</strong> December 2024<br />
-                  <strong>Estimated Completion:</strong> 30-45 days<br />
-                  <strong>Status:</strong> Under construction
+                  <strong>Residence:</strong> 1478<br />
+                  <strong>Features:</strong> End unit, open floor plan<br />
+                  <strong>Completion:</strong> Move-in Ready!
                 </div>
                 <a 
                   href="tel:7025001955"
@@ -155,16 +157,16 @@ export default function QuickMoveIn() {
               </div>
             </div>
 
-            {/* Home 3 */}
+            {/* Home 3 - 849 ANGWIN LN */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
               <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">Home Image 3</span>
+                <span className="text-gray-500">849 ANGWIN LN</span>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-gray-900">Residence 1479</h3>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
-                    Coming Soon
+                  <h3 className="text-xl font-bold text-gray-900">849 ANGWIN LN | Lot UV0066</h3>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    Move-in Ready!
                   </span>
                 </div>
                 <div className="text-2xl font-bold text-blue-600 mb-4">$379,990</div>
@@ -187,9 +189,99 @@ export default function QuickMoveIn() {
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mb-4">
-                  <strong>Move-in Ready:</strong> January 2025<br />
-                  <strong>Estimated Completion:</strong> 60-75 days<br />
-                  <strong>Status:</strong> Pre-construction
+                  <strong>Residence:</strong> 1479<br />
+                  <strong>Special:</strong> 3.875% (4.941% APR)*<br />
+                  <strong>Completion:</strong> Move-in Ready!
+                </div>
+                <a 
+                  href="tel:7025001955"
+                  className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Call Dr. Jan: (702) 500-1955
+                </a>
+              </div>
+            </div>
+
+            {/* Home 4 - 825 ATLEIGH AVE */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
+              <div className="h-64 bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">825 ATLEIGH AVE</span>
+              </div>
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-gray-900">825 ATLEIGH AVE | Lot UV0075</h3>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    Move-in Ready!
+                  </span>
+                </div>
+                <div className="text-2xl font-bold text-blue-600 mb-4">$386,890</div>
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="text-center">
+                    <div className="font-bold text-gray-900">1,479</div>
+                    <div className="text-sm text-gray-600">Sq Ft</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-gray-900">3</div>
+                    <div className="text-sm text-gray-600">Bedrooms</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-gray-900">2.5</div>
+                    <div className="text-sm text-gray-600">Bathrooms</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-gray-900">2</div>
+                    <div className="text-sm text-gray-600">Car Garage</div>
+                  </div>
+                </div>
+                <div className="text-sm text-gray-600 mb-4">
+                  <strong>Residence:</strong> 1479<br />
+                  <strong>Features:</strong> Gray Cabinets, Quartz Countertops<br />
+                  <strong>Completion:</strong> Move-in Ready!
+                </div>
+                <a 
+                  href="tel:7025001955"
+                  className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Call Dr. Jan: (702) 500-1955
+                </a>
+              </div>
+            </div>
+
+            {/* Home 5 - 823 ATLEIGH AVE */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
+              <div className="h-64 bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">823 ATLEIGH AVE</span>
+              </div>
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-gray-900">823 ATLEIGH AVE | Lot UV0074</h3>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    Move-in Ready!
+                  </span>
+                </div>
+                <div className="text-2xl font-bold text-blue-600 mb-4">$387,890</div>
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="text-center">
+                    <div className="font-bold text-gray-900">1,405</div>
+                    <div className="text-sm text-gray-600">Sq Ft</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-gray-900">3</div>
+                    <div className="text-sm text-gray-600">Bedrooms</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-gray-900">2.5</div>
+                    <div className="text-sm text-gray-600">Bathrooms</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-gray-900">2</div>
+                    <div className="text-sm text-gray-600">Car Garage</div>
+                  </div>
+                </div>
+                <div className="text-sm text-gray-600 mb-4">
+                  <strong>Residence:</strong> 1405<br />
+                  <strong>Completion:</strong> Move-in Ready!<br />
+                  <strong>Status:</strong> Available for viewing
                 </div>
                 <a 
                   href="tel:7025001955"
@@ -264,6 +356,62 @@ export default function QuickMoveIn() {
                 Complete financing, final walkthrough, and move into your new home at The Townes at Union Village!
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location & Move-In Map */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Quick Move-In Homes at Union Village
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Located at 1001 Gearus Place, Henderson, NV 89011. Move-in ready homes available now with immediate occupancy.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Move-In Ready Homes Available</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🏠</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">5 Move-In Ready Homes</h4>
+                    <p className="text-gray-600 text-sm">Homes at 986 GEARUS PL, 862 ANGWIN LN, 849 ANGWIN LN, 825 ATLEIGH AVE, and 823 ATLEIGH AVE.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">⚡</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Immediate Occupancy</h4>
+                    <p className="text-gray-600 text-sm">Skip the waiting period - these homes are completed and ready for immediate move-in.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">👁️</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">See What You Get</h4>
+                    <p className="text-gray-600 text-sm">Tour completed homes to see actual finishes, layouts, and quality before you buy.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="text-2xl mr-3">🎯</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Limited Availability</h4>
+                    <p className="text-gray-600 text-sm">Only 5 quick move-in homes remaining. Contact Dr. Jan Duffy today to secure your home.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <SEOOptimizedMap 
+              variant="business-profile"
+              title="Quick Move-In Homes at Union Village - Henderson, NV"
+              description="5 move-in ready homes available now. Immediate occupancy at 1001 Gearus Place, Henderson, NV 89011."
+            />
           </div>
         </div>
       </section>

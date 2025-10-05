@@ -204,7 +204,7 @@ export default function Contact() {
                     <div className="text-3xl mr-4">📍</div>
                     <div>
                       <p className="font-semibold text-gray-900">Location</p>
-                      <p className="text-gray-600">Henderson, NV</p>
+                      <p className="text-gray-600">1001 Gearus Place, Henderson, NV 89011</p>
                     </div>
                   </div>
                 </div>
