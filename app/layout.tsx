@@ -5,7 +5,7 @@ import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
+import LuxuryFooter from './components/luxury-footer'
 import { baseUrl } from './sitemap'
 import LocalBusinessSchema, { NewHomeDevelopmentSchema } from './components/local-business-schema'
 
@@ -75,7 +75,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Navbar />
         {children}
-        <Footer />
+        <LuxuryFooter />
         <Analytics />
         <SpeedInsights />
       </body>
