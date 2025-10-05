@@ -36,18 +36,29 @@ export default function SEOOptimizedMap({
   if (variant === 'embedded') {
     return (
       <div className={`relative ${className}`}>
-        <div className="w-full h-80 rounded-lg shadow-lg overflow-hidden">
-          <iframe
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=15`}
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title={`${title} - Location Map`}
-            aria-label={`Map showing location of ${businessName} at ${unionVillageAddress}`}
-          />
+        <div className="w-full h-80 rounded-lg shadow-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+          {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ? (
+            <iframe
+              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=15`}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`${title} - Location Map`}
+              aria-label={`Map showing location of ${businessName} at ${unionVillageAddress}`}
+            />
+          ) : (
+            <div className="text-center p-8">
+              <div className="text-4xl mb-4">📍</div>
+              <h4 className="font-semibold text-gray-900 mb-2">The Townes at Union Village</h4>
+              <p className="text-gray-600 text-sm mb-4">{unionVillageAddress}</p>
+              <p className="text-gray-500 text-xs">
+                Interactive map requires Google Maps API key configuration
+              </p>
+            </div>
+          )}
         </div>
         
         {showBusinessInfo && (
@@ -99,18 +110,29 @@ export default function SEOOptimizedMap({
           </div>
 
           {/* Google Business Profile Map */}
-          <div className="w-full h-64 rounded-lg overflow-hidden mb-4">
-            <iframe
-              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=16`}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title={`${businessName} - Google Business Profile`}
-              aria-label={`Google Business Profile map for ${businessName}`}
-            />
+          <div className="w-full h-64 rounded-lg overflow-hidden mb-4 bg-gray-100 flex items-center justify-center">
+            {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ? (
+              <iframe
+                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=16`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`${businessName} - Google Business Profile`}
+                aria-label={`Google Business Profile map for ${businessName}`}
+              />
+            ) : (
+              <div className="text-center p-8">
+                <div className="text-4xl mb-4">📍</div>
+                <h4 className="font-semibold text-gray-900 mb-2">The Townes at Union Village</h4>
+                <p className="text-gray-600 text-sm mb-4">{unionVillageAddress}</p>
+                <p className="text-gray-500 text-xs">
+                  Interactive map requires Google Maps API key configuration
+                </p>
+              </div>
+            )}
           </div>
 
           {/* Business Information */}
@@ -164,17 +186,28 @@ export default function SEOOptimizedMap({
       <div className="bg-white rounded-lg shadow-lg p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-4">{title}</h3>
         
-        <div className="w-full h-80 rounded-lg overflow-hidden mb-4">
-          <iframe
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=15`}
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title={`Interactive map of ${businessName}`}
-          />
+        <div className="w-full h-80 rounded-lg overflow-hidden mb-4 bg-gray-100 flex items-center justify-center">
+          {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ? (
+            <iframe
+              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=15`}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`Interactive map of ${businessName}`}
+            />
+          ) : (
+            <div className="text-center p-8">
+              <div className="text-4xl mb-4">📍</div>
+              <h4 className="font-semibold text-gray-900 mb-2">The Townes at Union Village</h4>
+              <p className="text-gray-600 text-sm mb-4">{unionVillageAddress}</p>
+              <p className="text-gray-500 text-xs">
+                Interactive map requires Google Maps API key configuration
+              </p>
+            </div>
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -12,17 +12,28 @@ export default function SimpleUnionVillageMap({ className = '', showDirections =
   return (
     <div className={`relative ${className}`}>
       {/* Google Maps Embed */}
-      <div className="w-full h-96 rounded-lg shadow-lg overflow-hidden">
-        <iframe
+      <div className="w-full h-96 rounded-lg shadow-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+        {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ? (
+          <iframe
             src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=15`}
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="The Townes at Union Village Location"
-        />
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="The Townes at Union Village Location"
+          />
+        ) : (
+          <div className="text-center p-8">
+            <div className="text-4xl mb-4">📍</div>
+            <h4 className="font-semibold text-gray-900 mb-2">The Townes at Union Village</h4>
+            <p className="text-gray-600 text-sm mb-4">{unionVillageAddress}</p>
+            <p className="text-gray-500 text-xs">
+              Interactive map requires Google Maps API key configuration
+            </p>
+          </div>
+        )}
       </div>
       
       {/* Address and Directions */}
