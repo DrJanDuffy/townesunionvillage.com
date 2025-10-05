@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import RealScoutWidget from '../components/realscout-widget'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -328,26 +327,118 @@ export default function Contact() {
       </section>
 
       {/* RealScout Search Widget */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+      {/* Location & Contact Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
             <div className="mb-4">
               <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
-                PROPERTY SEARCH
+                PREMIUM LOCATION
               </div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
-              <span className="font-extralight">Start Your Property Search</span>
+            <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
+              <span className="font-extralight">The Townes at Union Village</span>
+              <br />
+              <span className="text-2xl md:text-3xl font-light text-gray-600 tracking-wider">
+                HENDERSON, NEVADA
+              </span>
             </h2>
-            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              Ready to find your dream home? Search all available properties in Henderson, NV and surrounding areas 
-              with expert guidance from Dr. Jan Duffy, your exclusive buyer representative.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
+              Discover the perfect blend of sophisticated living and convenient access in Henderson, Nevada. 
+              Experience exceptional new construction with expert guidance from Dr. Jan Duffy, your exclusive buyer representative.
             </p>
           </div>
-          <RealScoutWidget 
-            title="Search Henderson Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Your exclusive buyer representative"
-          />
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="bg-white p-10 rounded-xl shadow-xl border border-gray-100">
+              <h3 className="text-3xl font-light text-gray-900 mb-8 tracking-wide">Why Choose Henderson, NV?</h3>
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <span className="text-white text-xl">🏥</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-lg">Premium Healthcare Access</h4>
+                    <p className="text-gray-600 font-light leading-relaxed">Minutes from Henderson Hospital and top-tier medical facilities, ensuring exceptional healthcare convenience.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <span className="text-white text-xl">🛍️</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-lg">Luxury Shopping Destinations</h4>
+                    <p className="text-gray-600 font-light leading-relaxed">Proximity to Galleria at Sunset, premium retailers, and upscale dining establishments.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <span className="text-white text-xl">🛣️</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-lg">Strategic Highway Access</h4>
+                    <p className="text-gray-600 font-light leading-relaxed">Convenient access to Highway 95 and I-215 for seamless commuting throughout the Las Vegas Valley.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <span className="text-white text-xl">🌵</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-lg">Desert Living Excellence</h4>
+                    <p className="text-gray-600 font-light leading-relaxed">Experience the beauty of desert living at 2,000 feet with stunning mountain vistas and outdoor recreation opportunities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden">
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-6">The Townes at Union Village</h3>
+                <p className="text-lg font-medium text-gray-700 mb-2">Century Communities</p>
+                
+                <div className="flex items-start space-x-3 mb-6">
+                  <div className="text-amber-600 text-xl">📍</div>
+                  <div>
+                    <p className="text-gray-900 font-medium">1001 Gearus Place</p>
+                    <p className="text-gray-600">Henderson, NV 89011</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-3 mb-8">
+                  <div className="text-amber-600 text-xl">📞</div>
+                  <a href="tel:7025001955" className="text-gray-900 font-medium hover:text-amber-600 transition-colors">
+                    (702) 500-1955
+                  </a>
+                </div>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <a
+                    href="https://maps.google.com/?q=1001+Gearus+Place,+Henderson,+NV+89011"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-3 rounded-lg text-center font-semibold transition-colors duration-300"
+                  >
+                    GET DIRECTIONS
+                  </a>
+                  <a
+                    href="https://maps.google.com/?q=1001+Gearus+Place,+Henderson,+NV+89011"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white border-2 border-amber-600 text-amber-600 hover:bg-amber-50 px-4 py-3 rounded-lg text-center font-semibold transition-colors duration-300"
+                  >
+                    VIEW ON MAP
+                  </a>
+                  <a
+                    href="mailto:DrJanSells@UnionVillage.com"
+                    className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-3 rounded-lg text-center font-semibold transition-colors duration-300"
+                  >
+                    EMAIL
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

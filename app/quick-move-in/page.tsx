@@ -1,5 +1,4 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
-import RealScoutWidget from '../components/realscout-widget'
 
 export default function QuickMoveIn() {
   return (
@@ -41,26 +40,39 @@ export default function QuickMoveIn() {
       </section>
 
       {/* RealScout Search Widget */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="mb-4">
-              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
-                EXPAND YOUR OPTIONS
-              </div>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
-              <span className="font-extralight">Explore All Available Properties</span>
-            </h2>
-            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              Beyond our quick move-in homes, discover all available properties in Henderson, NV and surrounding areas 
-              with expert guidance from Dr. Jan Duffy, your exclusive buyer representative.
-            </p>
+      {/* Limited Availability Alert */}
+      <section className="py-16 bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-amber-800/90 to-amber-900/90"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-white/20">
+            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
+            EXCLUSIVE OPPORTUNITY
           </div>
-          <RealScoutWidget 
-            title="Search All Henderson Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Your exclusive buyer representative"
-          />
+          <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
+            <span className="font-extralight">Quick Move-In Homes</span>
+            <br />
+            <span className="text-2xl md:text-3xl font-light text-amber-200 tracking-wider">
+              MOVE IN TODAY
+            </span>
+          </h2>
+          <p className="text-xl mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+            Don't wait for construction to complete. These exceptional quick move-in homes are ready now, 
+            featuring premium finishes and Century Home Connect® smart technology.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8">
+            <a
+              href="tel:7025001955"
+              className="bg-white hover:bg-gray-100 text-amber-900 px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+            >
+              SCHEDULE PRIVATE TOUR
+            </a>
+            <a
+              href="mailto:DrJanSells@UnionVillage.com"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-amber-900 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+            >
+              CONTACT DR. JAN
+            </a>
+          </div>
         </div>
       </section>
 

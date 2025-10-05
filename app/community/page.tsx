@@ -1,6 +1,5 @@
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
 import DebugEnv from '../components/debug-env'
-import RealScoutWidget from '../components/realscout-widget'
 
 export default function Community() {
   return (
@@ -86,26 +85,88 @@ export default function Community() {
       </section>
 
       {/* RealScout Search Widget */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="mb-4">
-              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
-                PROPERTY SEARCH
-              </div>
+      {/* Community Gallery Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4 text-center">
+          <div className="mb-4">
+            <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
+              COMMUNITY GALLERY
             </div>
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
-              <span className="font-extralight">Find Your Perfect Home</span>
-            </h2>
-            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              Explore all available properties in Henderson, NV and discover why our community is the perfect place 
-              to call home with expert guidance from Dr. Jan Duffy.
-            </p>
           </div>
-          <RealScoutWidget 
-            title="Search Henderson Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Your exclusive buyer representative"
-          />
+          <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
+            <span className="font-extralight">Exceptional Living</span>
+            <br />
+            <span className="text-2xl md:text-3xl font-light text-gray-600 tracking-wider">
+              COMMUNITY GALLERY
+            </span>
+          </h2>
+          <p className="text-xl text-gray-600 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
+            Discover the sophisticated lifestyle awaiting you at The Townes at Union Village. 
+            From meticulously designed interiors to thoughtfully planned community spaces, 
+            every detail reflects our commitment to exceptional living.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="text-gray-600 font-light tracking-wide relative z-10">Luxury Home Exterior</span>
+            </div>
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="text-gray-600 font-light tracking-wide relative z-10">Modern Luxury Kitchen</span>
+            </div>
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="text-gray-600 font-light tracking-wide relative z-10">Spacious Living Room</span>
+            </div>
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="text-gray-600 font-light tracking-wide relative z-10">Elegant Master Suite</span>
+            </div>
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="text-gray-600 font-light tracking-wide relative z-10">Premium Bathroom</span>
+            </div>
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="text-gray-600 font-light tracking-wide relative z-10">Community Amenities</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Limited Availability Alert */}
+      <section className="py-16 bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-amber-800/90 to-amber-900/90"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-white/20">
+            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
+            EXCLUSIVE OPPORTUNITY
+          </div>
+          <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
+            <span className="font-extralight">Limited Availability</span>
+            <br />
+            <span className="text-2xl md:text-3xl font-light text-amber-200 tracking-wider">
+              SECURE YOUR PLACE TODAY
+            </span>
+          </h2>
+          <p className="text-xl mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+            Experience the pinnacle of luxury living in Henderson, NV. With limited availability, 
+            secure your private consultation with Dr. Jan Duffy to learn about these exceptional homes.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8">
+            <a
+              href="tel:7025001955"
+              className="bg-white hover:bg-gray-100 text-amber-900 px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+            >
+              SCHEDULE COMMUNITY TOUR
+            </a>
+            <a
+              href="mailto:DrJanSells@UnionVillage.com"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-amber-900 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+            >
+              CONTACT DR. JAN
+            </a>
+          </div>
         </div>
       </section>
 
