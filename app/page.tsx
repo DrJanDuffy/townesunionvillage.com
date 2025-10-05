@@ -8,85 +8,123 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 h-[700px] flex items-center justify-center text-white overflow-hidden">
-        {/* Luxury Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M40 40c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm20 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
-        </div>
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white overflow-hidden">
+        {/* Dynamic Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
         
-        {/* Subtle Luxury Accents */}
-        <div className="absolute top-32 left-32 w-24 h-24 bg-gradient-to-br from-amber-400/10 to-amber-600/5 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-32 right-32 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-blue-600/5 rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-white/5 to-gray-400/5 rounded-full blur-xl"></div>
+        {/* Animated Floating Orbs */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/15 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-2xl animate-pulse delay-500" />
+        
+        {/* Floating Particles */}
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-amber-400 rounded-full animate-bounce delay-300" />
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white rounded-full animate-bounce delay-700" />
+        <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-blue-400 rounded-full animate-bounce delay-500" />
+        <div className="absolute top-2/3 right-1/4 w-1 h-1 bg-amber-300 rounded-full animate-bounce delay-1000" />
+        
+        {/* Geometric Patterns */}
+        <div className="absolute top-10 right-10 w-32 h-32 border border-white/10 rotate-45 animate-spin-slow" />
+        <div className="absolute bottom-10 left-10 w-24 h-24 border border-amber-400/20 rotate-12 animate-pulse" />
         
         {/* Main Content */}
-        <div className="relative z-20 text-center max-w-6xl mx-auto px-4">
-          {/* Luxury Badge */}
-          <div className="inline-flex items-center bg-gradient-to-r from-amber-600 to-amber-700 backdrop-blur-sm text-white px-8 py-4 rounded-full text-sm font-bold mb-8 shadow-2xl border border-amber-400/30">
-            <span className="w-3 h-3 bg-white rounded-full mr-3 animate-pulse shadow-lg"></span>
+        <div className="relative z-20 text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Enhanced Badge */}
+          <div className="inline-flex items-center bg-gradient-to-r from-amber-600/90 to-amber-700/90 backdrop-blur-md text-white px-8 py-4 rounded-full text-sm font-bold mb-12 shadow-2xl border border-amber-400/30 hover:scale-105 transition-all duration-300">
+            <span className="w-3 h-3 bg-white rounded-full mr-3 animate-pulse shadow-lg" />
             EXCLUSIVE NEW CONSTRUCTION - LIMITED RELEASE
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-light leading-tight mb-8 tracking-wide">
-            <span className="text-white font-extralight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+          {/* Main Headline */}
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-tight mb-8 tracking-wide">
+            <span className="text-white font-extralight block mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
               Townes at Union Village
             </span>
-            <br />
-            <span className="text-2xl md:text-3xl font-light text-gray-300 tracking-wider" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
-              LUXURY NEW HOMES IN HENDERSON, NEVADA
+            <span className="text-3xl md:text-5xl lg:text-6xl font-light text-amber-300 tracking-wider block" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
+              HOMES BY DR. JAN DUFFY
             </span>
           </h1>
           
-          <div className="mb-8">
-            <p className="text-xl md:text-2xl text-gray-200 font-light mb-2 tracking-wide">PRICED FROM</p>
-            <div className="text-5xl md:text-6xl font-light text-white mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+          {/* Enhanced Pricing Display */}
+          <div className="mb-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-200 font-light mb-3 tracking-wide">PRICED FROM</p>
+            <div className="text-6xl md:text-7xl font-light text-white mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
               $374,990
             </div>
-            <p className="text-sm text-gray-400 tracking-wider">TOWNHOMES UP TO 1,479 SQ FT</p>
+            <p className="text-lg text-gray-300 tracking-wider">TOWNHOMES UP TO 1,479 SQ FT</p>
+            <div className="mt-6 flex justify-center space-x-4 text-sm text-gray-400">
+              <span>• 2-3 Bedrooms</span>
+              <span>• 2.5 Bathrooms</span>
+              <span>• 2-Car Garage</span>
+            </div>
           </div>
           
-          <p className="text-lg mb-10 text-gray-300 max-w-4xl mx-auto font-light leading-relaxed tracking-wide">
+          {/* Enhanced Description */}
+          <p className="text-xl md:text-2xl mb-16 text-gray-200 max-w-5xl mx-auto font-light leading-relaxed tracking-wide">
             Sophisticated new construction featuring premium finishes, Century Home Connect® smart technology, 
             and exceptional attention to detail. Experience the pinnacle of modern living with expert guidance 
             from Dr. Jan Duffy, your exclusive buyer representative.
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8 mb-12">
+          {/* Enhanced CTA Buttons */}
+          <div className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-8 mb-16">
             <a
               href="tel:7025001955"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 border border-amber-500/50 tracking-wide"
+              className="group bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-6 rounded-xl transition-all duration-300 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 border border-amber-500/50 tracking-wide min-w-[280px] relative overflow-hidden"
             >
-              SCHEDULE PRIVATE TOUR
+              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <span className="relative flex items-center justify-center">
+                <span className="mr-3">📞</span>
+                SCHEDULE PRIVATE TOUR
+              </span>
             </a>
             <Link
               href="/floor-plans"
-              className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 backdrop-blur-sm tracking-wide"
+              className="group bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-6 rounded-xl transition-all duration-300 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 backdrop-blur-sm tracking-wide min-w-[280px] relative overflow-hidden"
             >
-              EXPLORE FLOOR PLANS
+              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <span className="relative flex items-center justify-center">
+                <span className="mr-3">🏠</span>
+                EXPLORE FLOOR PLANS
+              </span>
             </Link>
             <Link
               href="/home-value"
-              className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 backdrop-blur-sm tracking-wide"
+              className="group bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-6 rounded-xl transition-all duration-300 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 backdrop-blur-sm tracking-wide min-w-[280px] relative overflow-hidden"
             >
-              GET HOME VALUE
+              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <span className="relative flex items-center justify-center">
+                <span className="mr-3">💰</span>
+                GET HOME VALUE
+              </span>
             </Link>
           </div>
           
-          {/* Luxury Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10 shadow-2xl hover:bg-white/10 transition-all duration-300">
-              <div className="text-4xl font-light text-white mb-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>3</div>
-              <div className="text-sm text-gray-300 font-light tracking-wide uppercase">Exclusive Floor Plans</div>
+          {/* Enhanced Luxury Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="group bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl hover:bg-white/10 hover:scale-105 transition-all duration-500 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="text-5xl font-light text-white mb-3 group-hover:text-amber-300 transition-colors duration-300" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>3</div>
+                <div className="text-gray-300 text-lg font-light tracking-wide group-hover:text-white transition-colors duration-300 uppercase">Exclusive Floor Plans</div>
+                <div className="text-gray-400 text-sm mt-2">Residence 1405 • 1478 • 1478</div>
+              </div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10 shadow-2xl hover:bg-white/10 transition-all duration-300">
-              <div className="text-4xl font-light text-white mb-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>1,405-1,479</div>
-              <div className="text-sm text-gray-300 font-light tracking-wide uppercase">Square Feet</div>
+            <div className="group bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl hover:bg-white/10 hover:scale-105 transition-all duration-500 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="text-5xl font-light text-white mb-3 group-hover:text-blue-300 transition-colors duration-300" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>1,405-1,479</div>
+                <div className="text-gray-300 text-lg font-light tracking-wide group-hover:text-white transition-colors duration-300 uppercase">Square Feet</div>
+                <div className="text-gray-400 text-sm mt-2">Spacious living areas</div>
+              </div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10 shadow-2xl hover:bg-white/10 transition-all duration-300">
-              <div className="text-4xl font-light text-white mb-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>2.5</div>
-              <div className="text-sm text-gray-300 font-light tracking-wide uppercase">Premium Bathrooms</div>
+            <div className="group bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl hover:bg-white/10 hover:scale-105 transition-all duration-500 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="text-5xl font-light text-white mb-3 group-hover:text-green-300 transition-colors duration-300" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>2.5</div>
+                <div className="text-gray-300 text-lg font-light tracking-wide group-hover:text-white transition-colors duration-300 uppercase">Premium Bathrooms</div>
+                <div className="text-gray-400 text-sm mt-2">Luxury finishes included</div>
+              </div>
             </div>
           </div>
         </div>
