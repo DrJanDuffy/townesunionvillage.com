@@ -168,15 +168,15 @@ export default function LuxuryFooter() {
                 The Townes at Union Village | Homes by Dr. Jan Duffy All rights reserved  © 2024 Nevada License S.0197614
               </div>
               <div className="flex space-x-6 text-sm">
-                <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors font-light">
+                <Link href="/privacy-policy" className="text-gray-400 hover:text-amber-400 transition-colors font-light">
                   Privacy Policy
-                </a>
-                <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors font-light">
+                </Link>
+                <Link href="/terms-of-service" className="text-gray-400 hover:text-amber-400 transition-colors font-light">
                   Terms of Service
-                </a>
-                <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors font-light">
+                </Link>
+                <Link href="/accessibility" className="text-gray-400 hover:text-amber-400 transition-colors font-light">
                   Accessibility
-                </a>
+                </Link>
               </div>
             </div>
           </div>
