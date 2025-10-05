@@ -26,7 +26,7 @@ interface RealScoutOfficeListingsProps {
 export default function RealScoutOfficeListings({ 
   className = '', 
   title = "Explore Other Henderson Properties",
-  subtitle = "Discover additional homes in the neighborhood with expert guidance from Dr. Jan Duffy"
+  subtitle = "Properties $350K-$450K • Single Family & Other Homes • Expert guidance from Dr. Jan Duffy"
 }: RealScoutOfficeListingsProps) {
   const [isLoading, setIsLoading] = useState(true)
   const [hasError, setHasError] = useState(false)
@@ -175,8 +175,8 @@ export default function RealScoutOfficeListings({
             sort-order="PRICE_LOW" 
             listing-status="For Sale" 
             property-types=",SFR,OTHER" 
-            price-min="500000" 
-            price-max="600000"
+            price-min="350000" 
+            price-max="450000"
           ></realscout-office-listings>
         )}
       </div>

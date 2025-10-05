@@ -362,7 +362,7 @@ export default function Contact() {
           </div>
           <RealScoutOfficeListings 
             title="Henderson Properties with Dr. Jan Duffy"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $500K-$600K • Single Family & Other Homes"
+            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
           />
         </div>
       </section>

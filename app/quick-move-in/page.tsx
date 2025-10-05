@@ -96,7 +96,7 @@ export default function QuickMoveIn() {
           </div>
           <RealScoutOfficeListings 
             title="Henderson Neighborhood Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $500K-$600K • Single Family & Other Homes"
+            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
           />
         </div>
       </section>
