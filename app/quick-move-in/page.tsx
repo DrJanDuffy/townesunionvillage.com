@@ -1,4 +1,5 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
+import RealScoutWidget from '../components/realscout-widget'
 
 export default function QuickMoveIn() {
   return (
@@ -36,6 +37,30 @@ export default function QuickMoveIn() {
               CONTACT DR. JAN
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* RealScout Search Widget */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="mb-4">
+              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
+                EXPAND YOUR OPTIONS
+              </div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
+              <span className="font-extralight">Explore All Available Properties</span>
+            </h2>
+            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
+              Beyond our quick move-in homes, discover all available properties in Henderson, NV and surrounding areas 
+              with expert guidance from Dr. Jan Duffy, your exclusive buyer representative.
+            </p>
+          </div>
+          <RealScoutWidget 
+            title="Search All Henderson Properties"
+            subtitle="Expert guidance from Dr. Jan Duffy • Your exclusive buyer representative"
+          />
         </div>
       </section>
 
