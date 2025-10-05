@@ -1,4 +1,5 @@
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
+import DebugEnv from '../components/debug-env'
 
 export default function Community() {
   return (
@@ -58,6 +59,7 @@ export default function Community() {
                 <li>• Proximity to outdoor recreation</li>
               </ul>
             </div>
+            <DebugEnv />
             <SimpleUnionVillageMap className="h-96" />
           </div>
         </div>

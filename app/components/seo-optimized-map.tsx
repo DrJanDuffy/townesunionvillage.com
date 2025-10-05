@@ -55,7 +55,7 @@ export default function SEOOptimizedMap({
               <h4 className="font-semibold text-gray-900 mb-2">The Townes at Union Village</h4>
               <p className="text-gray-600 text-sm mb-4">{unionVillageAddress}</p>
               <p className="text-gray-500 text-xs">
-                Interactive map requires Google Maps API key configuration
+                  Professional location information and contact details
               </p>
             </div>
           )}
@@ -128,9 +128,12 @@ export default function SEOOptimizedMap({
                 <div className="text-4xl mb-4">📍</div>
                 <h4 className="font-semibold text-gray-900 mb-2">The Townes at Union Village</h4>
                 <p className="text-gray-600 text-sm mb-4">{unionVillageAddress}</p>
-                <p className="text-gray-500 text-xs">
-                  Interactive map requires Google Maps API key configuration
-                </p>
+                <div className="space-y-2 text-xs text-gray-500">
+                  <p>📍 Henderson, Nevada 89011</p>
+                  <p>🏥 Near Henderson Hospital</p>
+                  <p>🛍️ Close to shopping centers</p>
+                  <p>🛣️ Easy highway access</p>
+                </div>
               </div>
             )}
           </div>
@@ -204,7 +207,7 @@ export default function SEOOptimizedMap({
               <h4 className="font-semibold text-gray-900 mb-2">The Townes at Union Village</h4>
               <p className="text-gray-600 text-sm mb-4">{unionVillageAddress}</p>
               <p className="text-gray-500 text-xs">
-                Interactive map requires Google Maps API key configuration
+                  Professional location information and contact details
               </p>
             </div>
           )}
