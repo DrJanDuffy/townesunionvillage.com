@@ -12,16 +12,16 @@ import LocalBusinessSchema, { NewHomeDevelopmentSchema } from './components/loca
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'The Townes at Union Village - New Homes in Henderson, NV',
-    template: '%s | The Townes at Union Village',
+    default: 'Townes at Union Village | Homes by Dr. Jan Duffy',
+    template: '%s | Townes at Union Village | Homes by Dr. Jan Duffy',
   },
   description: 'New townhomes for sale in Henderson, NV starting from $374,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent. Century Communities.',
   keywords: 'new homes Henderson NV, townhomes Henderson, Century Communities, Union Village, Dr. Jan Duffy, real estate agent',
   openGraph: {
-    title: 'The Townes at Union Village - New Homes in Henderson, NV',
+    title: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     description: 'New townhomes for sale in Henderson, NV starting from $374,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent.',
     url: baseUrl,
-    siteName: 'The Townes at Union Village',
+    siteName: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     locale: 'en_US',
     type: 'website',
     images: [

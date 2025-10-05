@@ -34,7 +34,7 @@ export function Navbar() {
     <nav className="flex items-center justify-between w-full py-4 px-4 bg-white shadow-sm">
       <div className="flex items-center space-x-8">
         <Link href="/" className="text-2xl font-bold text-blue-600">
-          The Townes at Union Village
+          Townes at Union Village
         </Link>
         <div className="hidden md:flex space-x-6">
           {Object.entries(navItems).map(([path, { name }]) => {

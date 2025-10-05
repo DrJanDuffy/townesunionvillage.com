@@ -16,12 +16,12 @@ export default function QuickMoveIn() {
             <span className="font-extralight text-white">Quick Move-In Homes</span>
             <br />
             <span className="text-2xl md:text-3xl font-light text-blue-200 tracking-wider">
-              THE TOWNES AT UNION VILLAGE
+              HOMES BY DR. JAN DUFFY
             </span>
           </h1>
           <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
             Experience immediate luxury living! Several exceptional homes are available for immediate or near-future occupancy 
-            at The Townes at Union Village, featuring premium finishes and Century Home Connect® smart technology.
+            at Townes at Union Village, featuring premium finishes and Century Home Connect® smart technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 

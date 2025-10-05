@@ -31,7 +31,7 @@ export default function Page() {
           
           <h1 className="text-5xl md:text-7xl font-light leading-tight mb-8 tracking-wide">
             <span className="text-white font-extralight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-              The Townes at Union Village
+              Townes at Union Village
             </span>
             <br />
             <span className="text-2xl md:text-3xl font-light text-gray-300 tracking-wider" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
@@ -126,7 +126,7 @@ export default function Page() {
           </div>
           <h2 className="text-4xl md:text-5xl font-light mb-4 tracking-wide">LIMITED AVAILABILITY</h2>
           <p className="text-xl mb-8 font-light max-w-3xl mx-auto leading-relaxed">
-            Only 3 exclusive floor plans remain. The Townes at Union Village represents the pinnacle of luxury new construction. 
+            Only 3 exclusive floor plans remain. Townes at Union Village represents the pinnacle of luxury new construction. 
             Secure your private consultation with Dr. Jan Duffy before these exceptional homes are claimed.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -155,7 +155,7 @@ export default function Page() {
             </div>
           </div>
           <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
-            <span className="font-extralight">The Townes at Union Village</span>
+            <span className="font-extralight">Townes at Union Village</span>
             <br />
             <span className="text-2xl md:text-3xl font-light text-gray-600 tracking-wider">
               EXCEPTIONAL FLOOR PLANS

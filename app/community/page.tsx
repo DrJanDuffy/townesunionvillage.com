@@ -17,7 +17,7 @@ export default function Community() {
             <span className="font-extralight text-white">Community</span>
             <br />
             <span className="text-2xl md:text-3xl font-light text-blue-200 tracking-wider">
-              THE TOWNES AT UNION VILLAGE
+              HOMES BY DR. JAN DUFFY
             </span>
           </h1>
           <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
