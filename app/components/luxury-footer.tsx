@@ -23,7 +23,7 @@ export default function LuxuryFooter() {
             <div className="lg:col-span-2">
               <div className="mb-6">
                 <h3 className="text-3xl font-light text-white mb-4 tracking-wide">
-                  The Townes at Union Village
+                  Townes at Union Village
                 </h3>
                 <p className="text-gray-300 font-light leading-relaxed max-w-md">
                   Sophisticated new construction townhomes in Henderson, Nevada, featuring premium finishes, 
@@ -165,8 +165,7 @@ export default function LuxuryFooter() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-400 text-sm font-light mb-4 md:mb-0">
-                © 2024 The Townes at Union Village. All rights reserved. | 
-                <span className="ml-1">Dr. Jan Duffy, Nevada License S.0197614</span>
+                The Townes at Union Village | Homes by Dr. Jan Duffy All rights reserved  © 2024 Nevada License S.0197614
               </div>
               <div className="flex space-x-6 text-sm">
                 <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors font-light">
