@@ -43,10 +43,10 @@ export function Navbar() {
               <Link
                 key={path}
                 href={path}
-                className={`transition-colors duration-200 ${
+                className={`transition-optimized ${
                   isActive
                     ? 'text-blue-600 font-medium border-b-2 border-blue-600'
-                    : 'text-gray-700 hover:text-blue-600'
+                    : 'text-gray-700 hover:text-blue-600 hover-scale'
                 }`}
               >
                 {name}
@@ -58,7 +58,7 @@ export function Navbar() {
       <div className="flex items-center space-x-4">
         <a
           href="tel:7025001955"
-          className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+          className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 hover-scale transition-optimized font-medium transform-gpu"
         >
           Call (702) 500-1955
         </a>

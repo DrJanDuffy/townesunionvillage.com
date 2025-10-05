@@ -30,7 +30,7 @@ export default function Page() {
         {/* Main Content */}
         <div className="relative z-20 text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Enhanced Badge */}
-          <div className="inline-flex items-center bg-gradient-to-r from-amber-600/90 to-amber-700/90 backdrop-blur-md text-white px-8 py-4 rounded-full text-sm font-bold mb-12 shadow-2xl border border-amber-400/30 hover:scale-105 transition-all duration-300">
+          <div className="inline-flex items-center bg-gradient-to-r from-amber-600/90 to-amber-700/90 backdrop-blur-md text-white px-8 py-4 rounded-full text-sm font-bold mb-12 shadow-2xl border border-amber-400/30 hover-scale transition-optimized transform-gpu">
             <span className="w-3 h-3 bg-white rounded-full mr-3 animate-pulse shadow-lg" />
             EXCLUSIVE NEW CONSTRUCTION - LIMITED RELEASE
           </div>
@@ -70,7 +70,7 @@ export default function Page() {
           <div className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-8 mb-16">
             <a
               href="tel:7025001955"
-              className="group bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-6 rounded-xl transition-all duration-300 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 border border-amber-500/50 tracking-wide min-w-[280px] relative overflow-hidden"
+              className="group bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-6 rounded-xl transition-optimized text-lg font-bold shadow-2xl hover:shadow-3xl hover:scale-105 border border-amber-500/50 tracking-wide min-w-[280px] relative overflow-hidden transform-gpu"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <span className="relative flex items-center justify-center">
@@ -80,7 +80,7 @@ export default function Page() {
             </a>
             <Link
               href="/floor-plans"
-              className="group bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-6 rounded-xl transition-all duration-300 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 backdrop-blur-sm tracking-wide min-w-[280px] relative overflow-hidden"
+              className="group bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-6 rounded-xl transition-optimized text-lg font-bold shadow-2xl hover:shadow-3xl hover:scale-105 backdrop-blur-sm tracking-wide min-w-[280px] relative overflow-hidden transform-gpu"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <span className="relative flex items-center justify-center">
@@ -90,7 +90,7 @@ export default function Page() {
             </Link>
             <Link
               href="/home-value"
-              className="group bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-6 rounded-xl transition-all duration-300 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 backdrop-blur-sm tracking-wide min-w-[280px] relative overflow-hidden"
+              className="group bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-6 rounded-xl transition-optimized text-lg font-bold shadow-2xl hover:shadow-3xl hover:scale-105 backdrop-blur-sm tracking-wide min-w-[280px] relative overflow-hidden transform-gpu"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <span className="relative flex items-center justify-center">
@@ -156,10 +156,10 @@ export default function Page() {
 
       {/* Limited Availability */}
       <section className="bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white text-center py-12 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-amber-800/90 to-amber-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-amber-800/90 to-amber-900/90" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-white/20">
-            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
+            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse" />
             EXCLUSIVE OPPORTUNITY
           </div>
           <h2 className="text-4xl md:text-5xl font-light mb-4 tracking-wide">LIMITED AVAILABILITY</h2>
@@ -170,13 +170,13 @@ export default function Page() {
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <a
               href="tel:7025001955"
-              className="bg-white text-amber-900 px-10 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+              className="bg-white text-amber-900 px-10 py-4 rounded-lg hover:bg-gray-100 transition-optimized text-lg font-semibold shadow-2xl hover:shadow-3xl hover:scale-105 tracking-wide transform-gpu"
             >
               SECURE PRIVATE CONSULTATION
             </a>
             <Link
               href="/floor-plans"
-              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-4 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-4 rounded-lg transition-optimized text-lg font-semibold shadow-2xl hover:shadow-3xl hover:scale-105 tracking-wide transform-gpu"
             >
               EXPLORE FLOOR PLANS
             </Link>
@@ -205,9 +205,9 @@ export default function Page() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
             {/* Residence 1602 */}
-            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
               <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10" />
                 <span className="text-gray-600 font-light tracking-wide">Residence 1602</span>
               </div>
               <div className="p-8">
@@ -235,7 +235,7 @@ export default function Page() {
                 </div>
                 <Link
                   href="/floor-plans#residence-1602"
-                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center block tracking-wide"
+                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
                 >
                   EXPLORE DETAILS
                 </Link>
@@ -243,9 +243,9 @@ export default function Page() {
             </div>
 
             {/* Residence 1478 */}
-            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
               <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10" />
                 <span className="text-gray-600 font-light tracking-wide">Residence 1478</span>
               </div>
               <div className="p-8">
@@ -273,7 +273,7 @@ export default function Page() {
                 </div>
                 <Link
                   href="/floor-plans#residence-1478"
-                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center block tracking-wide"
+                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
                 >
                   EXPLORE DETAILS
                 </Link>
@@ -281,9 +281,9 @@ export default function Page() {
             </div>
 
             {/* Residence 1479 */}
-            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
               <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10" />
                 <span className="text-gray-600 font-light tracking-wide">Residence 1479</span>
               </div>
               <div className="p-8">
@@ -311,7 +311,7 @@ export default function Page() {
                 </div>
                 <Link
                   href="/floor-plans#residence-1479"
-                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center block tracking-wide"
+                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
                 >
                   EXPLORE DETAILS
                 </Link>
@@ -328,7 +328,7 @@ export default function Page() {
             <div className="mb-4">
               <div className="inline-flex items-center bg-blue-600/10 px-4 py-2 rounded-full text-sm font-semibold text-blue-800 border border-blue-200">
                 NEIGHBORHOOD PROPERTIES
-              </div>
+            </div>
             </div>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
               <span className="font-extralight">Explore Other Henderson Homes</span>
@@ -347,10 +347,10 @@ export default function Page() {
 
       {/* Call to Action */}
       <section className="bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white text-center py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-gray-900/95 to-slate-800/95"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-gray-900/95 to-slate-800/95" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
-            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
+            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse" />
             FINAL OPPORTUNITY
           </div>
           <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
@@ -367,13 +367,13 @@ export default function Page() {
           <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8">
             <a
               href="tel:7025001955"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-5 rounded-lg transition-optimized text-lg font-semibold shadow-2xl hover:shadow-3xl hover:scale-105 tracking-wide transform-gpu"
             >
               SECURE PRIVATE CONSULTATION
             </a>
             <Link
               href="/contact"
-              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-12 py-5 rounded-lg transition-optimized text-lg font-semibold shadow-2xl hover:shadow-3xl hover:scale-105 tracking-wide transform-gpu"
             >
               SCHEDULE CONSULTATION
             </Link>
