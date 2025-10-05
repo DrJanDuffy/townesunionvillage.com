@@ -6,31 +6,78 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center h-[500px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/hero-union-village.jpg')" }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 text-center">
-          <h1 className="text-5xl font-extrabold leading-tight mb-4">
-            The Townes at Union Village - New Homes in Henderson, NV
+      <section className="relative bg-gradient-to-br from-slate-800 via-blue-900 to-slate-900 h-[600px] flex items-center justify-center text-white overflow-hidden" 
+               style={{ backgroundImage: "url('/hero-union-village.svg')" }}>
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}></div>
+        </div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-20 left-20 w-32 h-32 bg-blue-500/20 rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-slate-400/20 rounded-full blur-xl"></div>
+        
+        {/* Main Content */}
+        <div className="relative z-20 text-center max-w-6xl mx-auto px-4">
+          {/* Badge */}
+          <div className="inline-flex items-center bg-blue-600/90 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+            Now Selling - Limited Availability
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+            <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+              The Townes at Union Village
+            </span>
+            <br />
+            <span className="text-2xl md:text-3xl font-semibold text-blue-200" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+              New Homes in Henderson, NV
+            </span>
           </h1>
-          <p className="text-xl mb-8">
-            Now Selling! Starting from $374,990 - Townhomes up to 1,479 sq ft
+          
+          <p className="text-xl md:text-2xl mb-6 text-blue-100 font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+            Starting from <span className="text-3xl font-bold text-white">$374,990</span>
           </p>
-          <p className="text-lg font-semibold mb-8">
-            Expert Guidance from Dr. Jan Duffy, your Preferred Buyer Agent
+          
+          <p className="text-lg mb-8 text-gray-200 max-w-3xl mx-auto" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+            Beautiful townhomes up to 1,479 sq ft with Century Home Connect® smart features. 
+            Expert guidance from Dr. Jan Duffy, your Preferred Buyer Agent.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+          
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
             <a
               href="tel:7025001955"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition-all duration-300 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              Call NOW: (702) 500-1955
+              📞 Call NOW: (702) 500-1955
             </a>
             <Link
               href="/floor-plans"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors text-lg font-medium"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-lg transition-all duration-300 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              View Floor Plans
+              🏠 View Floor Plans
             </Link>
+          </div>
+          
+          {/* Quick Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+              <div className="text-2xl font-bold text-white">3</div>
+              <div className="text-sm text-blue-200">Floor Plans</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+              <div className="text-2xl font-bold text-white">1,405-1,479</div>
+              <div className="text-sm text-blue-200">Square Feet</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+              <div className="text-2xl font-bold text-white">2.5</div>
+              <div className="text-sm text-blue-200">Bathrooms</div>
+            </div>
           </div>
         </div>
       </section>
