@@ -457,6 +457,12 @@ export default function AboutDrJan() {
               SCHEDULE CONSULTATION
             </a>
             <a
+              href="/home-value"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-amber-900 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+            >
+              GET PROPERTY VALUATION
+            </a>
+            <a
               href="mailto:DrJanSells@UnionVillage.com"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-amber-900 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >

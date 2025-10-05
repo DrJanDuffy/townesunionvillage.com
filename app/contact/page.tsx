@@ -172,6 +172,22 @@ export default function Contact() {
                 >
                   Send Message to Dr. Jan
                 </button>
+                
+                {/* Home Value CTA */}
+                <div className="mt-6 p-6 bg-gradient-to-r from-amber-50 to-amber-100 rounded-lg border border-amber-200">
+                  <h3 className="text-lg font-semibold text-amber-900 mb-2">
+                    💰 Get Your Home Value First
+                  </h3>
+                  <p className="text-amber-800 mb-4 text-sm">
+                    Before we meet, get an instant property valuation to understand your current home's worth.
+                  </p>
+                  <a
+                    href="/home-value"
+                    className="inline-block bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors text-sm"
+                  >
+                    Get Free Home Value
+                  </a>
+                </div>
               </form>
             </div>
 

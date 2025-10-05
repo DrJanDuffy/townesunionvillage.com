@@ -145,26 +145,26 @@ export default function QuickMoveIn() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Home 1 - 986 GEARUS PL */}
+            {/* Home 1 - 8990 Rimerton Street */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
               <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">986 GEARUS PL</span>
+                <span className="text-gray-500">8990 Rimerton Street</span>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-gray-900">986 GEARUS PL | Lot UV0064</h3>
+                  <h3 className="text-xl font-bold text-gray-900">8990 Rimerton Street</h3>
                   <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
-                    Move-in Ready!
+                    Under Construction
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-blue-600 mb-4">$374,990</div>
+                <div className="text-2xl font-bold text-blue-600 mb-4">$420,240</div>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center">
-                    <div className="font-bold text-gray-900">1,405</div>
+                    <div className="font-bold text-gray-900">1,602</div>
                     <div className="text-sm text-gray-600">Sq Ft</div>
                   </div>
                   <div className="text-center">
-                    <div className="font-bold text-gray-900">2</div>
+                    <div className="font-bold text-gray-900">3</div>
                     <div className="text-sm text-gray-600">Bedrooms</div>
                   </div>
                   <div className="text-center">
@@ -177,16 +177,26 @@ export default function QuickMoveIn() {
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mb-4">
-                  <strong>Residence:</strong> 1405<br />
-                  <strong>Status:</strong> Quick Move-In<br />
-                  <strong>Completion:</strong> Move-in Ready!
+                  <strong>Residence:</strong> 1602<br />
+                  <strong>Community:</strong> Skye Canyon<br />
+                  <strong>Features:</strong> Century Home Connect®, BBQ Stub, Patio Cover
                 </div>
-                <a 
-                  href="tel:7025001955"
-                  className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                >
-                  Call Dr. Jan: (702) 500-1955
-                </a>
+                <div className="space-y-3">
+                  <a 
+                    href="https://drjanduffy.realscout.com/homesearch/listings/p-8990-rimerton-street-las-vegas-89166-glvartrestle-875"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  >
+                    View Full Listing Details
+                  </a>
+                  <a 
+                    href="tel:7025001955"
+                    className="block w-full bg-gray-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
+                  >
+                    Call Dr. Jan: (702) 500-1955
+                  </a>
+                </div>
               </div>
             </div>
 

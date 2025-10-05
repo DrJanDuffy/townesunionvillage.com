@@ -66,6 +66,12 @@ export default function Page() {
             >
               EXPLORE FLOOR PLANS
             </Link>
+            <Link
+              href="/home-value"
+              className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 hover:border-white/50 px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 backdrop-blur-sm tracking-wide"
+            >
+              GET HOME VALUE
+            </Link>
           </div>
           
           {/* Luxury Stats */}

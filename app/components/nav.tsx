@@ -19,13 +19,16 @@ const navItems = {
   '/about-dr-jan': {
     name: 'About Dr. Jan',
   },
+  '/home-value': {
+    name: 'Home Value',
+  },
   '/contact': {
     name: 'Contact',
   },
 }
 
 export function Navbar() {
-  let pathname = usePathname() || '/'
+  const pathname = usePathname() || '/'
 
   return (
     <nav className="flex items-center justify-between w-full py-4 px-4 bg-white shadow-sm">
@@ -35,7 +38,7 @@ export function Navbar() {
         </Link>
         <div className="hidden md:flex space-x-6">
           {Object.entries(navItems).map(([path, { name }]) => {
-            let isActive = path === pathname
+            const isActive = path === pathname
             return (
               <Link
                 key={path}
