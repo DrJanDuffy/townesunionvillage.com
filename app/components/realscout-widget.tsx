@@ -1,3 +1,7 @@
+'use client'
+
+import { useEffect } from 'react'
+
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -19,6 +23,31 @@ export default function RealScoutWidget({
   title = "Find Your Dream Home",
   subtitle = "Search all available properties in Henderson, NV and surrounding areas"
 }: RealScoutWidgetProps) {
+  useEffect(() => {
+    // Load RealScout script if not already loaded
+    if (!document.querySelector('script[src*="realscout-web-components"]')) {
+      const script = document.createElement('script')
+      script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js'
+      script.type = 'module'
+      document.head.appendChild(script)
+    }
+
+    // Add custom styles if not already added
+    if (!document.querySelector('style[data-realscout-custom]')) {
+      const style = document.createElement('style')
+      style.setAttribute('data-realscout-custom', 'true')
+      style.textContent = `
+        realscout-advanced-search {
+          --rs-as-button-text-color: #ffffff;
+          --rs-as-background-color: #ffffff;
+          --rs-as-button-color: rgb(35, 93, 137);
+          --rs-as-widget-width: 500px !important;
+        }
+      `
+      document.head.appendChild(style)
+    }
+  }, [])
+
   return (
     <div className={`bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden ${className}`}>
       {/* Header */}
