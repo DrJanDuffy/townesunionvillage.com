@@ -14,7 +14,7 @@ export default function SimpleUnionVillageMap({ className = '', showDirections =
       {/* Google Maps Embed */}
       <div className="w-full h-96 rounded-lg shadow-lg overflow-hidden">
         <iframe
-          src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || 'YOUR_API_KEY'}&q=${encodedAddress}&zoom=15`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=15`}
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -78,7 +78,7 @@ export function AdvancedUnionVillageMap({ className = '' }: { className?: string
       
       {/* Load Google Maps script */}
       <script
-        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || 'YOUR_API_KEY'}&libraries=places&callback=initUnionVillageMap`}
+        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places&callback=initUnionVillageMap`}
         async
         defer
       />

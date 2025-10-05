@@ -38,7 +38,7 @@ export default function SEOOptimizedMap({
       <div className={`relative ${className}`}>
         <div className="w-full h-80 rounded-lg shadow-lg overflow-hidden">
           <iframe
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || 'YOUR_API_KEY'}&q=${encodedAddress}&zoom=15`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=15`}
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -101,7 +101,7 @@ export default function SEOOptimizedMap({
           {/* Google Business Profile Map */}
           <div className="w-full h-64 rounded-lg overflow-hidden mb-4">
             <iframe
-              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || 'YOUR_API_KEY'}&q=${encodedAddress}&zoom=16`}
+              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=16`}
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -166,7 +166,7 @@ export default function SEOOptimizedMap({
         
         <div className="w-full h-80 rounded-lg overflow-hidden mb-4">
           <iframe
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || 'YOUR_API_KEY'}&q=${encodedAddress}&zoom=15`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${encodedAddress}&zoom=15`}
             width="100%"
             height="100%"
             style={{ border: 0 }}

@@ -1,5 +1,4 @@
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
-import UnionVillageElevation from '../components/union-village-elevation'
 
 export default function Community() {
   return (
@@ -102,47 +101,40 @@ export default function Community() {
         </div>
       </section>
 
-      {/* Elevation Profile Section */}
+      {/* Area Features Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Area Elevation & Terrain
+              Why Choose Henderson, Nevada?
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Discover the beautiful terrain around The Townes at Union Village. Located at approximately 2,000 feet elevation, 
-              enjoy stunning views of the Las Vegas Valley and surrounding mountain ranges.
+              The Townes at Union Village is perfectly positioned in Henderson, Nevada at approximately 2,000 feet elevation, 
+              offering stunning views and ideal desert living.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            <UnionVillageElevation showAreaElevation={true} showWalkingTrail={false} />
-            <UnionVillageElevation showAreaElevation={false} showWalkingTrail={true} />
-          </div>
-
-          <div className="mt-12 text-center">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="text-4xl mb-4">🏔️</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Mountain Views</h3>
-                <p className="text-gray-600">
-                  Enjoy panoramic views of the surrounding mountain ranges from your new home.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl mb-4">🌅</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Valley Views</h3>
-                <p className="text-gray-600">
-                  Take in the beautiful Las Vegas Valley from the elevated position of Union Village.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl mb-4">🚶‍♀️</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Walking Trails</h3>
-                <p className="text-gray-600">
-                  Community walking trails with gentle elevation changes for daily exercise.
-                </p>
-              </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center bg-white p-8 rounded-lg shadow-md">
+              <div className="text-4xl mb-4">🏔️</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Mountain Views</h3>
+              <p className="text-gray-600">
+                Enjoy panoramic views of the surrounding mountain ranges from your new home at Union Village.
+              </p>
+            </div>
+            <div className="text-center bg-white p-8 rounded-lg shadow-md">
+              <div className="text-4xl mb-4">🌅</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Valley Views</h3>
+              <p className="text-gray-600">
+                Take in the beautiful Las Vegas Valley from the elevated position of Union Village.
+              </p>
+            </div>
+            <div className="text-center bg-white p-8 rounded-lg shadow-md">
+              <div className="text-4xl mb-4">🚶‍♀️</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Walking Trails</h3>
+              <p className="text-gray-600">
+                Community walking trails with gentle terrain perfect for daily exercise and outdoor enjoyment.
+              </p>
             </div>
           </div>
         </div>

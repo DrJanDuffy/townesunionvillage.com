@@ -16,9 +16,6 @@ const navItems = {
   '/quick-move-in': {
     name: 'Quick Move-In',
   },
-  '/area-exploration': {
-    name: 'Area Exploration',
-  },
   '/about-dr-jan': {
     name: 'About Dr. Jan',
   },
