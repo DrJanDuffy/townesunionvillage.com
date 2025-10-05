@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import SEOOptimizedMap from './components/seo-optimized-map'
 import RealScoutWidget from './components/realscout-widget'
-import RealScoutDebug from './components/realscout-debug'
 
 export default function Page() {
   return (
@@ -103,7 +102,6 @@ export default function Page() {
               your exclusive buyer representative.
             </p>
           </div>
-          <RealScoutDebug />
           <RealScoutWidget 
             title="Search All Henderson Properties"
             subtitle="Expert guidance from Dr. Jan Duffy • Your exclusive buyer representative"
